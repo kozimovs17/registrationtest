@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    background-image: url(./photo_2023-11-26_21-51-11.jpg);
+    background-size: cover;
+}
+
+header {
+    width: 1440px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+nav {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo { 
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+}
+
+ul {
+    width: auto;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.sign {
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: gray;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.formPage {
+    display: none;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 99;
+    top: 100px;
+    left: 150px;
+}
+.formPage .container {
+    width: 80%;
+    height: 80%;
+    background-image: url(./photo_2023-11-26_21-51-11.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.formitem{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+}
+
+.formitem a{
+    color: red;
+    font-size: 30px;
+}
+
+form {
+    width: 450px;
+    height: 500px;
+    box-shadow: 100px;
+    /* border: 3px solid black; */
+    background-color: rgba(128, 128, 128, 0.644);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+form input {
+    width: 80%;
+    border: none;
+    border-bottom: 3px solid #fff;
+    /* border-radius: 5px; */
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 15px;
+}
+
+form input::placeholder{
+    color: #fff;
+    font-size: 15px;
+}
+
+
+form .passworditem{
+    width: 30px;
+    height: 30px;
+    display: none;
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 235px;
+    right: 45px;
+}
+
+form .passworditem2{
+    width: 25px;
+    height: 25px;
+    display: block;
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 235px;
+    right: 45px;
+}
+
+.reg {
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(43, 43, 248);
+    padding: 10px 100px;
+    color: #fff;
+
+}
+section {
+    width: 1440px;
+    height: 800px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    /* border: 1px solid gray; */
+}
+
+.persons {
+    width: 500px;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.644);
+    color: #fff;
+    position: absolute;
+    right: 0;
+    transform: translate(500px, 0);
+    transition: all 0.2s;
+}
+.anm { 
+    border-radius: 50%;
+    /* background-color: red; */
+    background-image: url(./person.png);
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    transform: translate(-50px, 0px);
+    position: absolute;
+    right: -50px;
+    /* animation-name: et;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease; */
+}
+/* 
+@keyframes et {
+    0% {
+        box-shadow: 0 0 0 rgb(211, 181, 5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgb(211, 181, 5);
+    }
+    100% {
+        box-shadow: 0 0 0 rgb(211, 181, 5);
+    }
+} */
