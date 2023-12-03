@@ -71,3 +71,17 @@ eyeclick.addEventListener("click", () =>{
     }
 })
 
+
+let navbar = document.querySelector(".navbar");
+let ul = document.querySelector("ul");
+let t = 0;
+
+navbar.addEventListener("click", ()=>{
+    t++;
+    if( t % 2 !=0){
+        ul.style.display = "flex";
+    }else{
+        ul.style.display = "none";
+    }
+   
+})
